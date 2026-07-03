@@ -1,6 +1,6 @@
-# Day Conversion Standard
+# Conversion Standard
 
-Use this reference when a future conversion should follow the Day iOS to macOS precedent.
+Use this reference when a future conversion should keep iOS and macOS separate enough for platform quality while sharing enough product code to avoid drift.
 
 ## Core Principle
 
@@ -15,9 +15,9 @@ Default structure:
 
 For a separate macOS repo request, keep the same principles but make the sync mechanism explicit: shared package dependency, subtree, submodule, generated copy step, or documented manual sync checklist. Do not create an untracked clone with no update story.
 
-## Day Pattern
+## Proven Pattern
 
-The Day conversion moved common app code into shared sources and split platform entrypoints:
+The expected conversion pattern moves common app code into shared sources and splits platform entrypoints:
 
 - Shared model, service, StoreKit/subscription, content, weather, news, preferences, and reusable view logic.
 - iOS entrypoint and mobile shell kept in the iOS platform folder.
@@ -63,4 +63,4 @@ Add or update:
 - Mac release plan with exact build, archive, export, screenshot, upload, and manual submission gates.
 - Handoff file with git state, verification, known dirty files, and next action.
 
-The Day conversion became easier to continue because the repo itself explained how iOS and macOS stay in sync.
+Conversions become easier to continue when the repo itself explains how iOS and macOS stay in sync.

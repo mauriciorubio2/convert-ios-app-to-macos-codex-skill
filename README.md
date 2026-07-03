@@ -1,6 +1,6 @@
 # Convert iOS App to macOS Codex Skill
 
-This repository contains a Codex skill for converting an existing iOS app into a macOS app using the standard proven during the Day iOS to macOS conversion: shared product code, independent platform targets, desktop-native Mac UI, separate release tracks, and real verification.
+This repository contains a Codex skill for converting an existing iOS app into a macOS app using a shared-code, independent-platform standard: shared product code, independent platform targets, desktop-native Mac UI, separate release tracks, and real verification.
 
 ## Install
 
@@ -36,7 +36,7 @@ Use $convert-ios-app-to-macos and preserve the iOS build that is already under A
 
 ## Privacy And Safety
 
-The skill is procedural guidance only. It does not include private Day app identifiers, credentials, API keys, App Store Connect tokens, RevenueCat keys, screenshots, or customer data. Future users should keep release credentials in their own secure local environment and should not publish app-specific secrets in skill references or public issues.
+The skill is procedural guidance only. It does not include private app identifiers, credentials, API keys, App Store Connect tokens, RevenueCat keys, screenshots, or customer data. Future users should keep release credentials in their own secure local environment and should not publish app-specific secrets in skill references or public issues.
 
 ## Development
 

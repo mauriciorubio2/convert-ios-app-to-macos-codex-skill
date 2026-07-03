@@ -1,13 +1,13 @@
 ---
 name: convert-ios-app-to-macos
-description: "Convert an existing iOS Swift or SwiftUI app into a desktop-native macOS app using the Day app standard: shared product code, independent iOS and macOS targets or repos where requested, macOS-specific entrypoints, UI, signing, screenshots, release configs, and verification. Use when asked to port, convert, add a Mac version, create a companion macOS app, preserve iOS while building macOS, keep iOS and macOS in sync, or optimize an iOS app for macOS."
+description: "Convert an existing iOS Swift or SwiftUI app into a desktop-native macOS app using a shared-code, independent-platform standard: shared product code, independent iOS and macOS targets or repos where requested, macOS-specific entrypoints, UI, signing, screenshots, release configs, and verification. Use when asked to port, convert, add a Mac version, create a companion macOS app, preserve iOS while building macOS, keep iOS and macOS in sync, or optimize an iOS app for macOS."
 ---
 
 # Convert iOS App To macOS
 
 ## Overview
 
-Use this skill to turn an iOS app into a macOS app without making a stale clone. Default to the Day standard: shared model/service/product behavior, separate platform shells, separate schemes/build tracks, and Mac UI that feels native to desktop.
+Use this skill to turn an iOS app into a macOS app without making a stale clone. Default to the shared-code, independent-platform standard: shared model/service/product behavior, separate platform shells, separate schemes/build tracks, and Mac UI that feels native to desktop.
 
 If the `Build macOS Apps` plugin is available, use it while working: `swiftui-patterns` for scenes/layouts, `build-run-debug` for build/run automation, and `appkit-interop` or `window-management` only when SwiftUI cannot express the desktop behavior cleanly.
 
@@ -22,12 +22,12 @@ If the `Build macOS Apps` plugin is available, use it while working: `swiftui-pa
 
 ### 2. Choose The Sharing Model
 
-- Default to one source repo with shared product code and independent platform targets, matching Day.
+- Default to one source repo with shared product code and independent platform targets.
 - If the user explicitly asks for a separate macOS repo, create a sibling repo only after defining how shared code will be copied, packaged, vendored, or synchronized. Do not silently fork a stale one-off clone.
 - Put common models, services, stores, business rules, networking, subscriptions, and reusable page components in a shared module or `Shared/` folder.
 - Keep platform app entrypoints, scenes, windows, entitlements, Info.plists, app icons, platform settings, and release files platform-specific.
 
-Read `references/day-conversion-standard.md` when you need the Day conversion pattern in more detail.
+Read `references/conversion-standard.md` when you need the conversion pattern in more detail.
 
 ### 3. Build The Mac Target
 
@@ -72,6 +72,6 @@ Read `references/release-and-verification.md` before packaging, uploading, or ch
 
 ## References
 
-- `references/day-conversion-standard.md`: Day-derived architecture, repo, and release principles.
+- `references/conversion-standard.md`: shared-code architecture, repo, and release principles.
 - `references/desktop-adaptation.md`: macOS UI, scene, window, and screenshot adaptation checklist.
 - `references/release-and-verification.md`: build, test, App Store, subscription, and handoff verification.

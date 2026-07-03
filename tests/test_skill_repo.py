@@ -23,7 +23,7 @@ def test_required_files_exist() -> None:
         ROOT / ".github" / "workflows" / "test.yml",
         SKILL / "SKILL.md",
         SKILL / "agents" / "openai.yaml",
-        SKILL / "references" / "day-conversion-standard.md",
+        SKILL / "references" / "conversion-standard.md",
         SKILL / "references" / "desktop-adaptation.md",
         SKILL / "references" / "release-and-verification.md",
     ]
@@ -63,7 +63,7 @@ def test_no_template_todos() -> None:
 def test_references_are_linked() -> None:
     skill_text = read(SKILL / "SKILL.md")
     for name in [
-        "day-conversion-standard.md",
+        "conversion-standard.md",
         "desktop-adaptation.md",
         "release-and-verification.md",
     ]:
