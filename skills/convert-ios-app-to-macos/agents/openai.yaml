@@ -1,0 +1,4 @@
+interface:
+  display_name: "Convert iOS App to macOS"
+  short_description: "Port iOS apps into native Mac apps"
+  default_prompt: "Use $convert-ios-app-to-macos to convert this iOS app into a shared-code, desktop-native macOS app."
